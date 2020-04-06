@@ -1,0 +1,16 @@
+{
+    "name": "benjamin/quete_composer",
+    "description": "quête composer",
+    "authors": [
+        {
+            "name": "Ben2669",
+            "email": "benjamin.moniotte@gmail.com"
+        }
+    ],
+    "require": {},
+    "autoload": {
+        "psr-4": {
+            "App\\": "src/"
+        }
+    }
+}

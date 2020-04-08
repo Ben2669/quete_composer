@@ -20,11 +20,22 @@ class ComposerStaticInitd24a07d9ea2428d0d0696f17e10699f2
         ),
     );
 
+    public static $prefixesPsr0 = array (
+        'H' => 
+        array (
+            'HelloWorld' => 
+            array (
+                0 => __DIR__ . '/..' . '/ehime/hello-world/src',
+            ),
+        ),
+    );
+
     public static function getInitializer(ClassLoader $loader)
     {
         return \Closure::bind(function () use ($loader) {
             $loader->prefixLengthsPsr4 = ComposerStaticInitd24a07d9ea2428d0d0696f17e10699f2::$prefixLengthsPsr4;
             $loader->prefixDirsPsr4 = ComposerStaticInitd24a07d9ea2428d0d0696f17e10699f2::$prefixDirsPsr4;
+            $loader->prefixesPsr0 = ComposerStaticInitd24a07d9ea2428d0d0696f17e10699f2::$prefixesPsr0;
 
         }, null, ClassLoader::class);
     }
